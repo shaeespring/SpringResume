@@ -18,6 +18,7 @@
 \usepackage{enumitem} % for customizing lists
 \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
+\usepackage{xcolor}
 \usepackage[
     pdftitle={Shaela Spring's Resume},
     pdfauthor={Shaela Spring},
@@ -184,21 +185,22 @@
         % \vspace{0.2 cm}
 
         \normalsize
-
+        % mbox{{\footnotesize\faMapMarker*}\hspace*{0.13cm}Your Location}%
+        % \kern 0.25 cm%
+        % \AND%
         \kern 0.25 cm%
         \mbox{\hrefWithoutArrow{mailto:shaeespring@gmail.com}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}shaeespring@gmail.com}}%
         \kern 0.25 cm%
-
         \AND%
-        % \kern 0.25 cm%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
         % \mbox{\hrefWithoutArrow{https://yourwebsite.com/}{{\footnotesize\faLink}\hspace*{0.13cm}yourwebsite.com}}%
         % \kern 0.25 cm%
         % \AND%
-
         \kern 0.25 cm%
         \mbox{\hrefWithoutArrow{https://linkedin.com/in/shaeespring}{{\footnotesize\faLinkedinIn}\hspace*{0.13cm}linkedin.com/in/shaeespring}}%
         \kern 0.25 cm%
-
         \AND%
         \kern 0.25 cm%
         \mbox{\hrefWithoutArrow{https://github.com/shaeespring}{{\footnotesize\faGithub}\hspace*{0.13cm}github.com/shaeespring}}%
@@ -208,28 +210,38 @@
 
     \section{Objective}
 
+
+
+        
         \begin{onecolentry}
-            Looking for a RIT co-op opportunity (2026) in a Computer Science related field to apply and grow my skills as a software developer \end{onecolentry}
+            Looking for a RIT co-op opportunity for \textbf{\textcolor{primaryColor}{Spring, Summer, and Fall of 2026}} in a Computer Science related field to apply and grow my skills as a software developer. \end{onecolentry}
 
         \vspace{0.05 cm}
 
+    
+  
 
     \section{Education}
+
+
 
         
         \begin{twocolentry}
         {\textbf{GPA:} 3.4/4.0}
         {\textbf{Computer Science}
-        \hspace{.15 cm} - \hspace{.15 cm}
+        -
         \textbf{Rochester Institute of Technology}
-        \hspace{.15 cm} - \hspace{.15 cm}
-        Bachelor/Master of Science}
+        -
+            Combined Bachelor and Master of Science}
         \end{twocolentry}
+
 
     
     \section{Experience}
 
 
+
+        
         \begin{twocolentry}{
             Rochester, NY
             
@@ -237,10 +249,9 @@
         }
             \textbf{Teaching Assistant - Software Development} - Rochester Institute of Technology
             \begin{highlights}
-            \item Support instruction for a beginner-level software development in Python course
-            \item Conduct regular office hours and provide one-on-one guidance on Python syntax, logic,\\ debugging, and problem-solving strategies
-            \item Work with students to help them understand processes of software engineering, developing skills such as unit testing, debugging, and the git workflow
-            \item Grade assignments and provide feedback on projects to help students improve code quality and software development skills
+            \item Supported instruction for a beginner-level software engineering course in Python 
+            \item Mentored students to help them understand processes of software engineering, developing skills such as \textbf{\textcolor{primaryColor}{Python logic, syntax, unit testing, debugging, and the git workflow}}            
+            \item Graded assignments and provided feedback on projects to help students improve code quality and software development skills
             \end{highlights}
         \end{twocolentry}
 
@@ -254,9 +265,9 @@
             \textbf{Information \& Technology Services} - Rochester Institute of Technology
             \begin{highlights}
                 
-                \item Decrypt hardware issues for Dell and Mac devices using vendor parts and guides
-                \item Diagnose and repair students' personal devices, including part sourcing for damaged hardware and servicing impacted devices.
-                \item Adhere to a strict ServiceNow workflow for efficient communication with team members.
+                \item Deciphered hardware issues for \textbf{\textcolor{primaryColor}{Dell and Mac devices}} using vendor parts and guides
+                \item Diagnosed and repaired students' personal devices, including part sourcing for damaged hardware and servicing impacted devices
+                \item Adhered to a strict \textbf{\textcolor{primaryColor}{ServiceNow workflow}} for efficient communication with team members
     
             \end{highlights}
         \end{twocolentry}
@@ -272,14 +283,13 @@
             \textbf{Information Technology Intern} - Portville Central School
             \begin{highlights}
                 
-                \item Imaged over 200 laptops using the Microsoft Development Toolkit and Intune configuration \\
-                management system
-                \item Repaired laptop and desktop issues using vendor parts and guides (Dell)
+                \item Imaged over 200 laptops using the \textbf{\textcolor{primaryColor}{Microsoft Development Toolkit and Intune configuration \\
+                management system}}
+                \item Repaired \textbf{\textcolor{primaryColor}{Dell laptop and desktop}} issues using vendor parts and guides
                 \item Organized and coordinated assignments for all student technicians
     
             \end{highlights}
         \end{twocolentry}
-        
 
 
         \begin{twocolentry}{
@@ -298,14 +308,13 @@
    \section{\large\bfseries Projects} 
       
   \begingroup
-        \small
 
         
         \begin{twocolentry}{
             \hrefWithoutArrow{https://github.com/shaeespring/CarrierPigeon}{{\footnotesize\faGithub}\hspace*{0.13cm}{shaeespring/CarrierPigeon}}
         }
-            \textbf{Carrier Pigeon} - C, Vim, Linux Terminal, Git \begin{highlights}
-                \item Developed a POSIX style command line project management tool in C (C95 with gcc) with plain text database
+            \textbf{Carrier Pigeon - C, Vim, Linux Terminal, Git} \begin{highlights}
+                \item Developed a POSIX style command line project management tool in C with plain text database
                 \item Engineered a command-parsing system to process user input for creating, and updating tasks and projects directly from the terminal
             \end{highlights}
         \end{twocolentry}
@@ -314,10 +323,11 @@
         \vspace{0.05 cm}
 
         \begin{twocolentry}{
-            \hrefWithoutArrow{https://github.com/shaeespring/2024-AdventofCode}{{\footnotesize\faGithub}\hspace*{0.13cm}{shaeespring/2024-AdventofCode}}
+            \hrefWithoutArrow{https://github.com/shaeespring?org=ComputerScienceHouse&year_list=1}{{\footnotesize\faGithub}\hspace*{0.13cm}{shaeespring?org=CSH}}
         }
-            \textbf{Advent of Code - 2024} - Python, Problem Solving, Git \begin{highlights}
-                \item Solved programming puzzles of varying complexities in Python, increasing in difficulty daily
+            \textbf{Computer Science House - Go, Python, Problem Solving, Git, LaTeX} \begin{highlights}
+                \item Managed diverse web applications essential for member utilization
+                \item Drafted and proposed amendments to the constitution to streamline the election process
             \end{highlights}
         \end{twocolentry}
 
@@ -326,17 +336,16 @@
     \section{\large\bfseries Extracurriculars}
 
         \begingroup
-        \small
 
 
         
         \begin{onecolentry}
-            \textbf{Computer Science House - House Improvements Director}
+            \textbf{Computer Science House - Executive Board Member \& Secretary}
             \begin{highlights}
-                \item Collaborative social and academic housing with computing majors at RIT
-                \item Advocated for member needs in executive meetings, making decisions for community development and sustainability
                 \item Coordinated meetings for periodic deep cleans and projects, managing volunteer teams and working with other members to maintain the physicality of our dorm hall
-                \item Contributed to House Services and websites for both feature creations and maintenance in Python and Go
+                \item Advocated for member needs in executive meetings, making decisions for community development and sustainability
+                \item Organized and published notes for every executive board meeting and member meeting
+                
             \end{highlights}
         \end{onecolentry}
 
@@ -348,12 +357,18 @@
 
         
         \begin{onecolentry}
+            \textbf{Technologies:} Git, Linux, Bash shell, Microsoft Development Toolkit, Microsoft Office, Avid Pro Tools, MiniTab, Laptop Hardware \end{onecolentry}
+        \begin{onecolentry}
             \textbf{Languages:} Python, C, Java, HTML, SpringBoot, Rust \end{onecolentry}      
                 \vspace{0.1 cm}
-        \begin{onecolentry}
-            \textbf{Technologies:} Git, Linux, Bash shell, Microsoft Development Toolkit, Microsoft Office, Avid Pro Tools, MiniTab, Canva, Multi-Vendor Hardware \end{onecolentry}
         \vspace{0.05 cm}
 
 
+   
+
+
+
+
+    
 
 \end{document}
