@@ -15,6 +15,7 @@
 \usepackage{array} % tabularx requires this
 \usepackage[dvipsnames]{xcolor} % for coloring text
 \definecolor{primaryColor}{RGB}{78, 38, 140} % define primary color
+\definecolor{purple}{RGB}{78, 38, 140} % define purple for bold text
 \usepackage{enumitem} % for customizing lists
 \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
@@ -151,17 +152,6 @@
     \par\kern\topsep
 } % new environment for the header
 
-% \newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
-%   \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
-%     \put(
-%         \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
-%         \LenToUnit{\paperheight-1.0 cm}
-%     ){\vtop{{\null}\makebox[0pt][c]{
-%         \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
-%     }}}%
-%   }%
-% }%
-
 % save the original href command in a new command:
 \let\hrefWithoutArrow\href
 
@@ -185,25 +175,16 @@
         % \vspace{0.2 cm}
 
         \normalsize
-        % mbox{{\footnotesize\faMapMarker*}\hspace*{0.13cm}Your Location}%
+
+        \mbox{\hrefWithoutArrow{mailto:shaeespring@gmail.com}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}shaeespring@gmail.com}}
+        \kern 0.25 cm%
         % \kern 0.25 cm%
-        % \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{mailto:shaeespring@gmail.com}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}shaeespring@gmail.com}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
         % \mbox{\hrefWithoutArrow{https://yourwebsite.com/}{{\footnotesize\faLink}\hspace*{0.13cm}yourwebsite.com}}%
         % \kern 0.25 cm%
         % \AND%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/shaeespring}{{\footnotesize\faLinkedinIn}\hspace*{0.13cm}linkedin.com/in/shaeespring}}
         \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://linkedin.com/in/shaeespring}{{\footnotesize\faLinkedinIn}\hspace*{0.13cm}linkedin.com/in/shaeespring}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://github.com/shaeespring}{{\footnotesize\faGithub}\hspace*{0.13cm}github.com/shaeespring}}%
+        \mbox{\hrefWithoutArrow{https://github.com/shaeespring}{{\footnotesize\faGithub}\hspace*{0.13cm}github.com/shaeespring}}
     \end{header}
 
     \vspace{-0.2cm}
@@ -214,12 +195,11 @@
 
         
         \begin{onecolentry}
-            Looking for a RIT co-op opportunity for \textbf{\textcolor{primaryColor}{Spring, Summer, and Fall of 2026}} in a Computer Science related field to apply and grow my skills as a software developer. \end{onecolentry}
-
+            Seeking a RIT co-op for {\color{purple}\textbf{Spring-Summer 2027}} in Computer Science to apply and grow my software development skills.
         \vspace{0.05 cm}
+        \end{onecolentry}
 
-    
-  
+    \vspace{-0.2cm}
 
     \section{Education}
 
@@ -227,83 +207,54 @@
 
         
         \begin{twocolentry}
-        {\textbf{GPA:} 3.4/4.0}
-        {\textbf{Computer Science}
-        -
-        \textbf{Rochester Institute of Technology}
-        -
-            Combined Bachelor and Master of Science}
+            {August 2024-May 2026
+
+            \textbf{GPA:} 3.4/4.0 - \textit{Dean's List}}
+
+        {\textbf{Rochester Institute of Technology}
+
+            \textbf{Computer Science} - Bachelor and Master of Science }
         \end{twocolentry}
 
-
+    \vspace{-0.2cm}
     
     \section{Experience}
 
-
-
-        
-        \begin{twocolentry}{
-            Rochester, NY
-            
-            August 2025 - Present
-        }
-            \textbf{Teaching Assistant - Software Development} - Rochester Institute of Technology
+\begin{twocolentry}
+    {January 2026 - August 2026}
+    {\textbf{Junior Data Security Engineer} - Blue Cycle LLC}
+\end{twocolentry}
+\begin{highlights}
+    \item Built and tested {\color{purple}\textbf{PowerShell automation scripts}} with a team of engineers and AI tooling to assess Microsoft 365 tenant \\ configurations against a AI-readiness security framework. 
+    \item Analyzed {\color{purple}\textbf{access policy configurations}} (Conditional Access, RBAC) to reinforce least-privilege principles across client tenants
+    \item Built a {\color{purple}\textbf{Foundry-based AI chatbot}} with an internal system enforcing least-privilege access for AI-assisted IT operations
+    \item Earned {\color{purple}\textbf{Microsoft 365}},{\color{purple}\textbf{Cribl}}, and {\color{purple}\textbf{Claude}} certifications, covering endpoint management, data pipelining, and prompt optimization
+\end{highlights}
+\vspace{0.05 cm}
+\begin{twocolentry}
+    {August 2025 - Present}
+    {\textbf{Teaching Assistant - Software Development} - Rochester Institute of Technology}
+\end{twocolentry}        
             \begin{highlights}
-            \item Supported instruction for a beginner-level software engineering course in Python 
-            \item Mentored students to help them understand processes of software engineering, developing skills such as \textbf{\textcolor{primaryColor}{Python logic, syntax, unit testing, debugging, and the git workflow}}            
-            \item Graded assignments and provided feedback on projects to help students improve code quality and software development skills
+            \item Assist in instruction for beginner-level software development courses covering {\color{purple}\textbf{Python and Java}}
+            \item Mentored students to help them understand processes of software engineering, developing skills such as Python and Java logic, syntax, {\color{purple}\textbf{unit testing}}, debugging, and the  {\color{purple}\textbf{git workflow}}
+            \item Grade assignments and provide feedback on projects to help students improve code quality and software development skills
             \end{highlights}
-        \end{twocolentry}
 
         \vspace{0.05 cm}
         
-       \begin{twocolentry}{
-            Rochester, NY
-
-        August 2025 - Present
-        }
-            \textbf{Information \& Technology Services} - Rochester Institute of Technology
+\begin{twocolentry}
+    {August 2025 - January 2026}
+    {\textbf{Information \& Technology Services} - Rochester Institute of Technology}
+\end{twocolentry}
             \begin{highlights}
                 
-                \item Deciphered hardware issues for \textbf{\textcolor{primaryColor}{Dell and Mac devices}} using vendor parts and guides
-                \item Diagnosed and repaired students' personal devices, including part sourcing for damaged hardware and servicing impacted devices
-                \item Adhered to a strict \textbf{\textcolor{primaryColor}{ServiceNow workflow}} for efficient communication with team members
-    
+            \item Diagnose hardware issues for {\color{purple}\textbf{Dell and Mac devices}} using vendor parts and guides
+                \item Diagnose and repair students' personal devices, including part sourcing for damaged hardware and servicing impacted devices.
+                \item Adhere to a strict {\color{purple}\textbf{ServiceNow workflow}} for efficient communication with team members.
             \end{highlights}
-        \end{twocolentry}
 
-
-        \vspace{0.05 cm}
-
-       \begin{twocolentry}{
-            Portville, NY
-
-        Summers 2024 \& 2025
-        }
-            \textbf{Information Technology Intern} - Portville Central School
-            \begin{highlights}
-                
-                \item Imaged over 200 laptops using the \textbf{\textcolor{primaryColor}{Microsoft Development Toolkit and Intune configuration \\
-                management system}}
-                \item Repaired \textbf{\textcolor{primaryColor}{Dell laptop and desktop}} issues using vendor parts and guides
-                \item Organized and coordinated assignments for all student technicians
-    
-            \end{highlights}
-        \end{twocolentry}
-
-
-        \begin{twocolentry}{
-            Portville, NY
-
-        June 2021 – August 2025
-        }
-            \textbf{Barista/Cook/Dishwasher} - Myrge Cafe and Coffee House
-            \begin{highlights}
-                \item Prepared and served a variety of specialty beverages in a fast-paced, high-volume environment
-                \item Trained new employees on preparation techniques and customer service protocols
-                \item Worked with team members during peak hours to ensure quick service
-            \end{highlights}
-        \end{twocolentry}
+    \vspace{-0.2cm}
 
    \section{\large\bfseries Projects} 
       
@@ -313,7 +264,7 @@
         \begin{twocolentry}{
             \hrefWithoutArrow{https://github.com/shaeespring/CarrierPigeon}{{\footnotesize\faGithub}\hspace*{0.13cm}{shaeespring/CarrierPigeon}}
         }
-            \textbf{Carrier Pigeon - C, Vim, Linux Terminal, Git} \begin{highlights}
+            \textbf{Carrier Pigeon} - C, Vim, Linux Terminal, Git \begin{highlights}
                 \item Developed a POSIX style command line project management tool in C with plain text database
                 \item Engineered a command-parsing system to process user input for creating, and updating tasks and projects directly from the terminal
             \end{highlights}
@@ -323,15 +274,16 @@
         \vspace{0.05 cm}
 
         \begin{twocolentry}{
-            \hrefWithoutArrow{https://github.com/shaeespring?org=ComputerScienceHouse&year_list=1}{{\footnotesize\faGithub}\hspace*{0.13cm}{shaeespring?org=CSH}}
+            \hrefWithoutArrow{https://github.com/ComputerScienceHouse}{{\footnotesize\faGithub}\hspace*{0.13cm}{shaeespring?org=CSH}}
         }
-            \textbf{Computer Science House - Go, Python, Problem Solving, Git, LaTeX} \begin{highlights}
-                \item Managed diverse web applications essential for member utilization
-                \item Drafted and proposed amendments to the constitution to streamline the election process
+            \textbf{Computer Science House} - Go, Python, Problem Solving, Git, LaTeX \begin{highlights}
+                \item Contributed to diverse member services and websites for both feature creations and maintenance
+                \item Drafted and proposed amendments to the organization's constitution to streamline processes such as election of the Executive Board Members and member evaluation
             \end{highlights}
         \end{twocolentry}
 
 
+    \vspace{-0.2cm}
     \endgroup
     \section{\large\bfseries Extracurriculars}
 
@@ -340,12 +292,12 @@
 
         
         \begin{onecolentry}
-            \textbf{Computer Science House - Executive Board Member \& Secretary}
+            \textbf{Computer Science House - Executive Board Member and Secretary} 
             \begin{highlights}
-                \item Coordinated meetings for periodic deep cleans and projects, managing volunteer teams and working with other members to maintain the physicality of our dorm hall
+                \item Coordinated meetings for periodic deep cleans and projects, managing volunteer teams and working with other members to maintain and improve shared residential facilities
+                \item Prepared for renovations to our dorm hall, focusing on clear communication between our organization and contracting decisions to ensure a smooth transition
                 \item Advocated for member needs in executive meetings, making decisions for community development and sustainability
-                \item Organized and published notes for every executive board meeting and member meeting
-                
+                \item Organized and published notes for executive board meetings and member meetings
             \end{highlights}
         \end{onecolentry}
 
@@ -357,10 +309,13 @@
 
         
         \begin{onecolentry}
-            \textbf{Technologies:} Git, Linux, Bash shell, Microsoft Development Toolkit, Microsoft Office, Avid Pro Tools, MiniTab, Laptop Hardware \end{onecolentry}
-        \begin{onecolentry}
-            \textbf{Languages:} Python, C, Java, HTML, SpringBoot, Rust \end{onecolentry}      
+            \textbf{Languages:} Python, C, Java, HTML, Rust, PowerShell \end{onecolentry}      
                 \vspace{0.1 cm}
+        \begin{onecolentry}
+            \textbf{Technologies:} Git, Linux, Bash shell, Spring Boot, Microsoft Intune, MDT, Foundry \end{onecolentry}
+                \vspace{0.1 cm}
+        \begin{onecolentry}
+            \textbf{Tools:} ServiceNow, Avid Pro Tools, MiniTab, Canva, Multi-Vendor Hardware Knowledge, M365 \end{onecolentry}
         \vspace{0.05 cm}
 
 
